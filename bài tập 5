@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int count_positive(double arr[], int n) {
+    if (n == 0) {
+        return 0;
+    } else {
+        if (arr[n - 1] > 0) {
+            return 1 + count_positive(arr, n - 1);
+        } else {
+            return count_positive(arr, n - 1);
+        }
+    }
+}
+
+int main() {
+    double arr[] = {1, 15, -8, 9, -20, -5.5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int count = count_positive(arr, n);
+    cout << "Số Lượng giá trị dương có trong mảng là: " << count << endl;
+    return 0;
+}
