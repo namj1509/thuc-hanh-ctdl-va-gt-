@@ -22,3 +22,4 @@ int main() {
   else 
     cout<<n<<" là số lẻ";
 } 
+ link tham khảo: https://freetuts.net/de-quy-tuong-ho-mutual-recursion-2961.html
