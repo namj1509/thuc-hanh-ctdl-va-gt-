@@ -23,4 +23,4 @@ int main() {
 
     return 0;
 }
-14.	Hãy khai báo cấu trúc dữ liệu của cây n
+
